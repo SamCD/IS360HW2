@@ -1,0 +1,16 @@
+> #1
+  queue <- c("James", "Mary", "Steve", "Alex", "Patricia")
+> #2
+  queue <- c(queue, "Harold")
+> #3
+  queue = queue[-c(1)]
+> #4
+  queue <- queue[c(1,4,2,3,5)]
+> #5
+  queue <- queue[-c(5)]
+> #6
+  queue <- queue[!queue %in% c("Alex")]
+> #7
+  which(queue %in% "Patricia")
+> #8
+  length(queue)
